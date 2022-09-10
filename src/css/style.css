@@ -119,3 +119,6 @@ h1 {
   color: white;
   cursor: pointer;
 }
+
+/* Zooming in and out stopped working.
+This happened sometime after fixing header i think*/
