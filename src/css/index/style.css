@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url("../images/äng.png");
+  background-image: url("../images/äng.png"); /* This needs to be compressed */
   font-family: 'Trebuchet MS';
 }
 
@@ -41,7 +41,11 @@ h1 {
   justify-content: center;
   align-content: center;
   text-align: center;
-  text-size-adjust: revert;
+}
+
+#name {
+  width: 80%;
+  margin: auto;
 }
 
 .right { /* Right side of screen (Header, bodytitle, body, button)*/
@@ -61,8 +65,9 @@ h1 {
 .header { /* Make into an id so you can put it 
           inside of the rightItem class instead of having a
           new class entirely */
-  width: 100%;
+  width: 90%;
   height: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
