@@ -1,6 +1,9 @@
 body {
   margin: 0;
   background-image: url("../../images/äng.png"); /* This needs to be compressed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   font-family: 'Trebuchet MS';
 }
 
@@ -36,7 +39,7 @@ h1 {
 .left { /* Left side of screen (Title) */
   width: 100%;
   height: 100%;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.6);
   display: grid;
   justify-content: center;
   align-content: center;
