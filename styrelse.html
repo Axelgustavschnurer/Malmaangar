@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <html lang="sv">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+  <div class="header" style="background-color: white; box-shadow: 0px 0px 10px ;">
+    <div id="headerTitle"><h2><a href="index.html">Föreningen Malma By och Ängar</a></h2></div>
+    <div id="headerLinks" style="color: black;">
+      <a id="stodOss" onmouseover="stodOssEnter()" onmouseout="stodOssExit()">
+        Stöd Oss
+        <div class="dropdown-content" id="dropdwn1" onmouseover="stodOssEnter()" onmouseout="stodOssExit()">
+          <a href="stod_oss.html">Medlemsskap</a>
+        </div>
+      </a>
+      <a id="omOss" onmouseover="omOssEnter()" onmouseout="omOssExit()">
+        Om Föreningen
+        <div class="dropdown-content" onmouseover="omOssEnter()" onmouseout="omOssExit()">
+          <a href="om_oss.html">Bakgrund</a>
+          <a href="om_oss.html">Mål</a>
+          <a href="styrelse.html">Styrelse</a>
+          <a href="om_oss.html">Stadgar</a>
+        </div>
+      </a>
+      <a id="kontakt" onmouseover="kontaktEnter()" onmouseout="kontaktExit()">
+        Kontakt
+        <div class="dropdown-content" id="dropdwn2" onmouseover="kontaktEnter()" onmouseout="kontaktExit()">
+          <a href="kontakt.html">kontakt</a>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="contactCardFlex">
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Margareta Krabbe</h2>
+        <h3>Ordförande</h3>
+      </div>
+    </div>
+
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Hans Åberg</h2>
+        <h3>Sekreterare</h3>
+      </div>
+    </div>
+
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Ulla-Britt Fogelin Ekström</h2>
+        <h3>Kassör</h3>
+      </div>
+    </div>
+
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Sinnika Annell</h2>
+        <h3>Vice ordförande</h3>
+      </div>
+    </div>
+  
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Kurt Källström</h2>
+        <h3>Ledamot</h3>
+      </div>
+    </div>
+
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Leif Eriksson</h2>
+        <h3>Suppleant</h3>
+      </div>
+    </div>
+    
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Charlotte Petersson</h2>
+        <h3>Suppleant</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+
+    var stodOss = document.getElementById('stodOss');
+    var omOss = document.getElementById('omOss');
+    var kontakt = document.getElementById('kontakt')
+    
+    /* Stöd oss */
+    
+    function stodOssEnter() {
+      stodOss.style.backgroundColor = "#575F38";
+      stodOss.style.color = "white"
+    }
+    
+    function stodOssExit() {
+      stodOss.style.backgroundColor = "transparent";
+      stodOss.style.color = "black"
+    }
+    
+    /* Om Förening */
+    
+    function omOssEnter() {
+      omOss.style.backgroundColor = "#575F38";
+      omOss.style.color = "white"
+    }
+    
+    function omOssExit() {
+      omOss.style.backgroundColor = "transparent";
+      omOss.style.color = "black"
+    }
+    
+    /* Kontakt */
+    
+    function kontaktEnter() {
+      kontakt.style.backgroundColor = "#575F38";
+      kontakt.style.color = "white"
+    }
+    
+    function kontaktExit() {
+      kontakt.style.backgroundColor = "transparent";
+      kontakt.style.color = "black"
+    }
+    
+    
+    </script>
+    
+
+</body>
+
+</html>

@@ -6,19 +6,134 @@
   <html lang="sv">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="src/css/kontakt/style.css">
+  <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
 
-  <h1>kontaktuppgifter:</h1>
-  Ordförande: Margareta Krabbe<br/>
-  Sekreterare: Hans Åberg<br/>
-  Kassör: Ulla-Britt Fogelin Ekström<br/>
-  Vice ordförande: Sinnika Annell<br/>
-  Ledamot: Kurt Källström<br/>
-  Suppleant: Leif Eriksson<br/>
-  Suppleant: Charlotte Petersson.<br/>
+  <div class="header" style="background-color: white; box-shadow: 0px 0px 10px ;">
+    <div id="headerTitle"><h2><a href="index.html">Föreningen Malma By och Ängar</a></h2></div>
+    <div id="headerLinks" style="color: black;">
+      <a href="stod_oss.html">Stöd Oss</a>
+      <a href="om_oss.html">Om Föreningen</a>
+      <a href="utforska_naturen.html">Utforska Naturen</a>
+      <a href="viktiga_datum.html">Viktiga Datum</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </div>
+
+  <div class="contactCardFlex">
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Margareta Krabbe</h2>
+        <h3>Ordförande</h3>
+      </div>
+    </div>
+
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Hans Åberg</h2>
+        <h3>Sekreterare</h3>
+      </div>
+    </div>
+
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Ulla-Britt Fogelin Ekström</h2>
+        <h3>Kassör</h3>
+      </div>
+    </div>
+
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Sinnika Annell</h2>
+        <h3>Vice ordförande</h3>
+      </div>
+    </div>
+  
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Kurt Källström</h2>
+        <h3>Ledamot</h3>
+      </div>
+    </div>
+
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Leif Eriksson</h2>
+        <h3>Suppleant</h3>
+      </div>
+    </div>
+    
+    <div>
+      <div class="cardImage">
+        <img src="">
+      </div>
+      <div class="cardText">
+        <h2>Charlotte Petersson</h2>
+        <h3>Suppleant</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+
+    var stodOss = document.getElementById('stodOss');
+    var omOss = document.getElementById('omOss');
+    var kontakt = document.getElementById('kontakt')
+    
+    /* Stöd oss */
+    
+    function stodOssEnter() {
+      stodOss.style.backgroundColor = "#575F38";
+    }
+    
+    function stodOssExit() {
+      stodOss.style.backgroundColor = "transparent";
+    }
+    
+    /* Om Förening */
+    
+    function omOssEnter() {
+      omOss.style.backgroundColor = "#575F38";
+    }
+    
+    function omOssExit() {
+      omOss.style.backgroundColor = "transparent";
+    }
+    
+    /* Kontakt */
+    
+    function kontaktEnter() {
+      kontakt.style.backgroundColor = "#575F38";
+    }
+    
+    function kontaktExit() {
+      kontakt.style.backgroundColor = "transparent";
+    }
+    
+    
+    </script>
+    
 
 </body>
 

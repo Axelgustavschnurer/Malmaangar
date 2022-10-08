@@ -6,32 +6,90 @@
   <html lang="sv">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="src/css/index/style.css">
+  <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
+  <div class="backgroundImg"></div>
+  <div class="header">
+    <div id="headerTitle"><h2><a href="index.html">Föreningen Malma By och Ängar</a></h2></div>
+    <div id="headerLinks">
+      <a id="stodOss" onmouseover="stodOssEnter()" onmouseout="stodOssExit()">
+        Stöd Oss
+        <div class="dropdown-content" id="dropdwn1" onmouseover="stodOssEnter()" onmouseout="stodOssExit()">
+          <a href="stod_oss.html">Medlemsskap</a>
+        </div>
+      </a>
+      <a id="omOss" onmouseover="omOssEnter()" onmouseout="omOssExit()">
+        Om Föreningen
+        <div class="dropdown-content" onmouseover="omOssEnter()" onmouseout="omOssExit()">
+          <a href="om_oss.html">Bakgrund</a>
+          <a href="om_oss.html">Mål</a>
+          <a href="styrelse.html">Styrelse</a>
+          <a href="om_oss.html">Stadgar</a>
+        </div>
+      </a>
+      <a id="kontakt" onmouseover="kontaktEnter()" onmouseout="kontaktExit()">
+        Kontakt
+        <div class="dropdown-content" id="dropdwn2" onmouseover="kontaktEnter()" onmouseout="kontaktExit()">
+          <a href="kontakt.html">kontakt</a>
+        </div>
+      </a>
+    </div>
+  </div>
   <div class="gridContainer">
     <div class="left"><h1 id="name">Föreningen Malma By Och Ängar</h1></div>
     <div class="right">
-      <div class="rightItem">
-        <div class="header">
-          <div><a href="stod_oss.html">Stöd Oss</a></div>
-          <div><a href="utforska_naturen.html">Utforska Naturen</a></div>
-          <div><a href="viktiga_datum.html">Viktiga Datum</a></div>
-          <div><a href="kontakt.html">Kontakt</a></div>
-        </div>
-      </div>
-      <div class="rightItem" id="title">Om Oss</div>
-      <div class="rightItem" id="body">
+      <div id="title">Om Föreningen</div>
+      <div id="body">
         Föreningens ändamål skall vara att bevara befintliga värden i Malma by
         med dess omgivande natur- och kulturlandskap och att motverka
         markexploatering inom området.
       </div>
-      <div class="rightItem" id="button">
-        <a href="om_oss.html"><div class="button">Läs Mer</div></a>
+      <div id="button">
+        <a href="om_oss.html">Läs Mer</a>
       </div>
     </div>
   </div>
+
+<script>
+
+var stodOss = document.getElementById('stodOss');
+var omOss = document.getElementById('omOss');
+var kontakt = document.getElementById('kontakt')
+
+/* Stöd oss */
+
+function stodOssEnter() {
+  stodOss.style.backgroundColor = "#575F38";
+}
+
+function stodOssExit() {
+  stodOss.style.backgroundColor = "transparent";
+}
+
+/* Om Förening */
+
+function omOssEnter() {
+  omOss.style.backgroundColor = "#575F38";
+}
+
+function omOssExit() {
+  omOss.style.backgroundColor = "transparent";
+}
+
+/* Kontakt */
+
+function kontaktEnter() {
+  kontakt.style.backgroundColor = "#575F38";
+}
+
+function kontaktExit() {
+  kontakt.style.backgroundColor = "transparent";
+}
+
+
+</script>
 
 </body>
 
