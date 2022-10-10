@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <html lang="se">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+    <div class="header" style="background-color: white; box-shadow: 0px 0px 10px ;">
+        <div id="headerTitle"><h2><a href="index.html">Föreningen Malma By och Ängar</a></h2></div>
+        <div id="headerLinks" style="color: black;">
+            <a href="bli_medlem.html" id="stodOss" onmouseover="stodOssEnter()" onmouseout="stodOssExit()">Bli Medlem</a>
+            <a id="omOss" onmouseover="omOssEnter()" onmouseout="omOssExit()">
+                Om Föreningen
+                <div class="dropdown-content" id="dropdwn2" onmouseover="omOssEnter()" onmouseout="omOssExit()">
+                  <a href="om_oss.html">Mål</a>
+                  <a href="styrelse.html">Styrelse</a>
+                  <a href="stadgar.html">Stadgar</a>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="stadgarFlex">
+        <h1>Mål</h1>
+        <p>
+            Föreningens ändamål skall vara att bevara befintliga värden i Malma by
+            med dess omgivande natur- och kulturlandskap och att motverka
+            markexploatering inom området.
+        </p>
+    </div>
+
+
+    <script>
+
+        var stodOss = document.getElementById('stodOss');
+        var omOss = document.getElementById('omOss');
+        var kontakt = document.getElementById('kontakt')
+        
+        /* Stöd oss */
+        
+        function stodOssEnter() {
+        stodOss.style.backgroundColor = "#575F38";
+        stodOss.style.color = "white"
+        }
+        
+        function stodOssExit() {
+        stodOss.style.backgroundColor = "transparent";
+        stodOss.style.color = "black"
+        }
+        
+        /* Om Förening */
+        
+        function omOssEnter() {
+        omOss.style.backgroundColor = "#575F38";
+        omOss.style.color = "white"
+        }
+        
+        function omOssExit() {
+        omOss.style.backgroundColor = "transparent";
+        omOss.style.color = "black"
+        }
+        
+        /* Kontakt */
+        
+        function kontaktEnter() {
+        kontakt.style.backgroundColor = "#575F38";
+        kontakt.style.color = "white"
+        }
+        
+        function kontaktExit() {
+        kontakt.style.backgroundColor = "transparent";
+        kontakt.style.color = "black"
+        }
+        
+        
+    </script>
+
+</body>
+
+</html>

@@ -14,29 +14,17 @@
   <div class="header" style="background-color: white; box-shadow: 0px 0px 10px ;">
     <div id="headerTitle"><h2><a href="index.html">Föreningen Malma By och Ängar</a></h2></div>
     <div id="headerLinks" style="color: black;">
-      <a id="stodOss" onmouseover="stodOssEnter()" onmouseout="stodOssExit()">
-        Stöd Oss
-        <div class="dropdown-content" id="dropdwn1" onmouseover="stodOssEnter()" onmouseout="stodOssExit()">
-          <a href="stod_oss.html">Medlemsskap</a>
-        </div>
-      </a>
-      <a id="omOss" onmouseover="omOssEnter()" onmouseout="omOssExit()">
-        Om Föreningen
-        <div class="dropdown-content" onmouseover="omOssEnter()" onmouseout="omOssExit()">
-          <a href="om_oss.html">Bakgrund</a>
-          <a href="om_oss.html">Mål</a>
-          <a href="styrelse.html">Styrelse</a>
-          <a href="om_oss.html">Stadgar</a>
-        </div>
-      </a>
-      <a id="kontakt" onmouseover="kontaktEnter()" onmouseout="kontaktExit()">
-        Kontakt
-        <div class="dropdown-content" id="dropdwn2" onmouseover="kontaktEnter()" onmouseout="kontaktExit()">
-          <a href="kontakt.html">kontakt</a>
-        </div>
-      </a>
+        <a href="bli_medlem.html" id="stodOss" onmouseover="stodOssEnter()" onmouseout="stodOssExit()">Bli Medlem</a>
+        <a id="omOss" onmouseover="omOssEnter()" onmouseout="omOssExit()">
+            Om Föreningen
+            <div class="dropdown-content" id="dropdwn2" onmouseover="omOssEnter()" onmouseout="omOssExit()">
+              <a href="om_oss.html">Mål</a>
+              <a href="styrelse.html">Styrelse</a>
+              <a href="stadgar.html">Stadgar</a>
+            </div>
+        </a>
     </div>
-  </div>
+</div>
 
   <div class="contactCardFlex">
     <div>
@@ -121,7 +109,7 @@
     
     function stodOssEnter() {
       stodOss.style.backgroundColor = "#575F38";
-      stodOss.style.color = "white"
+      stodOss.style.color = "white";
     }
     
     function stodOssExit() {

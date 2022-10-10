@@ -71,7 +71,7 @@ h1 {
 }
 
 #headerLinks > a {
-  width: calc(100%/3);
+  width: 50%;
   height: 100%;
   margin: auto;
   display: flex;
@@ -88,7 +88,7 @@ h1 {
   position: absolute;
   background-color: #575F38;
   top: 100%;
-  width: calc(100%/5); /* Why does this work */
+  width: calc(100%/3.333); /* Why does this work */
   z-index: 1;
   height: auto;
   border-radius: 0px 0px 15px 15px;
@@ -231,10 +231,6 @@ h1 {
 
 /* Om Föreningen */
 
-/* Utforska naturen */
-
-/* Viktiga Datum */
-
 /* Styrelse */
 
 .contactCardFlex {
@@ -293,4 +289,26 @@ h1 {
     width: 75vw;
     height: 75vh;
   }
+}
+
+/* Stadgar */
+
+.stadgarFlex {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stadgarFlex > h1 {
+  padding: 200px 0px 0px 0px;
+}
+
+.stadgarFlex > p {
+  padding: 0px 200px 50px;
+  text-align: left;
+  line-height: 1.5em;
 }
