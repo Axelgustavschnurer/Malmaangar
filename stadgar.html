@@ -9,16 +9,49 @@
 
 <body>
 
-    <div class="header" style="background-color: white; box-shadow: 0px 0px 10px ;">
-        <div id="headerTitle"><h2><a href="index.html">Föreningen Malma By och Ängar</a></h2></div>
+    <div class="header" id="header">
+        <div id="headerTitle">
+            <h2><a href="index.html">Föreningen Malma By och Ängar</a></h2>
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+                  <input type="checkbox" />
+                  
+                  <!--
+                  Some spans to act as a hamburger.
+                  
+                  They are acting like a real hamburger,
+                  not that McDonalds stuff.
+                  -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <!--
+                  Too bad the menu has to be inside of the button
+                  but hey, it's pure CSS magic.
+                  -->
+                  <ul id="menu">
+                    <a href="index.html"><li>Hem</li></a>
+                    <a href="bli_medlem.html"><li>Bli Medlem</li></a>
+                    <a href="mal.html"><li>Mål</li></a>
+                    <a href="styrelse.html"><li>Styrelse</li></a>
+                    <a href="stadgar.html"><li>Stadgar</li></a>
+                  </ul>
+                </div>
+              </nav>
+        </div>
         <div id="headerLinks" style="color: black;">
             <a href="bli_medlem.html" id="stodOss" onmouseover="stodOssEnter()" onmouseout="stodOssExit()">Bli Medlem</a>
             <a id="omOss" onmouseover="omOssEnter()" onmouseout="omOssExit()">
                 Om Föreningen
                 <div class="dropdown-content" id="dropdwn2" onmouseover="omOssEnter()" onmouseout="omOssExit()">
                     <a href="mal.html">Mål</a>
-                  <a href="styrelse.html">Styrelse</a>
-                  <a href="stadgar.html">Stadgar</a>
+                    <a href="styrelse.html">Styrelse</a>
+                    <a href="stadgar.html">Stadgar</a>
                 </div>
             </a>
         </div>
