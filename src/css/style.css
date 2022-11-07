@@ -39,6 +39,8 @@ h1 {
   font-size: 3em;
 }
 
+/* header */
+
 .header {
   width: 100vw;
   height: auto;
@@ -86,7 +88,7 @@ h1 {
   cursor: pointer;
 }
 
-/* Kinda insane implementation of dropdown menu */
+/* Dropdown menu */
 
 .dropdown-content {
   display: none;
@@ -137,12 +139,9 @@ h1 {
   background-color: #454c2c;
 }
 
-/* End of insane dropdown menu implementation */
-
 /* Hamburger menu */
 
-#menuToggle
-{
+#menuToggle {
   display: none;
   position: relative;
   top: 50px;
@@ -152,22 +151,18 @@ h1 {
   user-select: none;
 }
 
-#menuToggle a
-{
+#menuToggle a {
   text-decoration: none;
   color: white;
   transition: color 0.3s ease;
   line-height: 1.5em;
 }
 
-#menuToggle a:hover
-{
+#menuToggle a:hover {
   font-weight: bold;
 }
 
-
-#menuToggle input
-{
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
@@ -175,16 +170,12 @@ h1 {
   top: -7px;
   left: -5px;
   cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */ 
+  opacity: 0;
+  z-index: 2;
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
+#menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
@@ -199,78 +190,50 @@ h1 {
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: white;
 }
 
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
+#menu {
   position: absolute;
   width: 300px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
   background: #575F38;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
-{
+#menu li {
   padding: 10px 0;
   font-size: 22px;
-}
+} 
 
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul {
   transform: none;
 }
 
@@ -280,14 +243,18 @@ h1 {
   }
 }
 
-/* No more hamburger*/
+/* index.html */
+
+/* Main screen layout */
 
 .gridContainer {
   display: grid;
   grid-template: 100vh / calc(100vw*2/5) 1fr;
 }
 
-.left { /* Left side of screen (Title) */
+/* Left side of screen (Title) */
+
+.left { 
   width: 100%;
   height: 100%;
   background-color: rgb(250, 249, 246, 0.6);
@@ -302,7 +269,9 @@ h1 {
   margin: auto;
 }
 
-.right { /* Right side of screen (Header, bodytitle, body, button)*/
+/* Right side of screen (Header, bodytitle, body, button) */
+
+.right { 
   width: 100%;
   height: 100%;
   background-color: rgb(0, 0, 0, 0.8); 
@@ -383,10 +352,6 @@ h1 {
   }
 }
 
-/* Stöd Oss */
-
-/* Om Föreningen */
-
 /* Styrelse */
 
 .contactCardFlex {
@@ -414,7 +379,6 @@ h1 {
   width: 100%;
   height: 65%;
 }
-
 
 .cardImage > img {
   width: 100%;
@@ -447,7 +411,7 @@ h1 {
   }
 }
 
-/* Stadgar */
+/* Flex layout for (Stadgar, mal, bli_medlem) */
 
 .stadgarFlex {
   width: auto;

@@ -9,31 +9,20 @@
 
 <body>
 
+  <!-- Header -->
+
     <div class="header" id="header">
         <div id="headerTitle">
             <h2><a href="index.html">Föreningen Malma By och Ängar</a></h2>
+            
+            <!-- Menu for phone -->
+            
             <nav role="navigation">
                 <div id="menuToggle">
-                  <!--
-                  A fake / hidden checkbox is used as click reciever,
-                  so you can use the :checked selector on it.
-                  -->
                   <input type="checkbox" />
-                  
-                  <!--
-                  Some spans to act as a hamburger.
-                  
-                  They are acting like a real hamburger,
-                  not that McDonalds stuff.
-                  -->
                   <span></span>
                   <span></span>
                   <span></span>
-                  
-                  <!--
-                  Too bad the menu has to be inside of the button
-                  but hey, it's pure CSS magic.
-                  -->
                   <ul id="menu">
                     <a href="index.html"><li>Hem</li></a>
                     <a href="bli_medlem.html"><li>Bli Medlem</li></a>
@@ -44,6 +33,9 @@
                 </div>
               </nav>
         </div>
+
+        <!-- Navbar for pc -->
+
         <div id="headerLinks" style="color: black;">
             <a href="bli_medlem.html" id="stodOss" onmouseover="stodOssEnter()" onmouseout="stodOssExit()">Bli Medlem</a>
             <a id="omOss" onmouseover="omOssEnter()" onmouseout="omOssExit()">
@@ -57,6 +49,8 @@
         </div>
     </div>
 
+    <!-- Body -->
+
     <div class="stadgarFlex">
       <div class="stadgarFlexBackground">
           <h1>Mål</h1>
@@ -68,6 +62,7 @@
         </div>
     </div>
 
+    <!-- JS -->
 
     <script>
 
