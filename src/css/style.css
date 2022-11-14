@@ -1,14 +1,19 @@
 body {
   margin: 0;
-  font-family: 'Trebuchet MS';
-
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 .backgroundImg {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   z-index: -1;
+}
+
+.backgroundImg > img {
+  width: 100%;
+  height: 100%;
   background-image: url("../images/malmangar.jpg"); /* This needs to be compressed */
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,10 +40,6 @@ a:active {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 3em;
-}
-
 /* header */
 
 .header {
@@ -47,6 +48,7 @@ h1 {
   position: fixed;
   display: grid; 
   grid-template: 100% / calc(100vw*2/5) 1fr;
+  font-weight: bold;
 }
 
 #header {
@@ -95,10 +97,11 @@ h1 {
   position: absolute;
   background-color: #575F38;
   top: 100%;
-  width: calc(100%/3.333); /* Why does this work */
+  left: 50%;
+  transform: translate(50%, 0);
+  width: calc(100%/5); /* Why does this work */
   z-index: 1;
   height: auto;
-  border-radius: 0px 0px 15px 15px;
 }
 
 .dropdown-content a {
@@ -144,11 +147,14 @@ h1 {
 #menuToggle {
   display: none;
   position: relative;
-  top: 50px;
-  left: 50px;
+  top: 25px;
+  left: 25px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
+  background-color: #575F38;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 #menuToggle a {
@@ -181,7 +187,10 @@ h1 {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: white;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;  
@@ -215,7 +224,8 @@ h1 {
 
 #menu {
   position: absolute;
-  width: 300px;
+  width: 100vw;
+  height: 100vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -255,18 +265,15 @@ h1 {
 /* Left side of screen (Title) */
 
 .left { 
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   background-color: rgb(250, 249, 246, 0.6);
   display: grid;
-  justify-content: center;
-  align-content: center;
+  place-items: center;
   text-align: center;
-}
-
-#name {
-  width: 80%;
-  margin: auto;
+  font-size: 3em;
+  padding: 0 100px;
+  font-weight: bold;
 }
 
 /* Right side of screen (Header, bodytitle, body, button) */
@@ -277,7 +284,7 @@ h1 {
   background-color: rgb(0, 0, 0, 0.8); 
   color: white;
   display: grid;
-  grid-template: 2fr 40% 1fr / 100%;
+  grid-template: 1fr 1fr 1fr / 100%; /* Needs better solution*/
 }
 
 #title {
@@ -289,13 +296,14 @@ h1 {
   align-items: flex-end;
   text-align: center;
   font-size: 2em;
+  font-weight: bold;
 }
 
 #body {
   height: 80%;
   width: 90%;
-  line-height: 1.5em;
-  font-size: 1.25em;
+  line-height: 1.75em;
+  font-size: 24px;
   margin: auto;
   display: flex;
   justify-content: flex-start;
@@ -317,7 +325,7 @@ h1 {
   background-color: #575F38;
   color: white;
   border-radius: 9999px;
-  font-weight: bold ;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,46 +337,21 @@ h1 {
   cursor: pointer;
 }
 
-@media (orientation: portrait) {
-  .gridContainer {
-    min-height: 100vh;
-    grid-template: 50vh auto / 100vw;
-  }
-  #header {
-    background-color: transparent;
-    box-shadow: none;
-  }
-  #headerTitle > h2 {
-    display: none;
-  }
-  #headerLinks > a{
-    display: none;
-  }
-  .right {
-    grid-template: 1fr 40% 1fr / 100%;
-  }
-  #button {
-    align-items: center;
-  }
-}
-
 /* Styrelse */
 
 .contactCardFlex {
-  width: auto;
   min-height: 100vh;
-  height: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  padding-top: 200px;
+  padding: 200px 0;
+  gap: 50px;
 }
 
 .contactCardFlex > div {
   width: 500px;
   height: 500px;
-  margin: 25px;
   border-radius: 25px;
   box-shadow: 10px 10px 25px gray;
   display: flex;
@@ -377,69 +360,123 @@ h1 {
 
 .cardImage {
   width: 100%;
-  height: 65%;
+  height: 75%;
 }
 
 .cardImage > img {
   width: 100%;
   height: 100%;
+  border-radius: 25px 25px 0px 0px;
 }
 
 .cardText {
   width: 100%;
   height: 35%;
-  border-radius: 0px 0px 25px 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 
 .cardText > h3 {
-  margin-top: 0;
   line-height: 0;
   font-weight: normal;
 }
 
-@media (orientation: portrait) {
-  .contactCardFlex {
-    padding: 0px;
-  }
-  .contactCardFlex > div {
-    width: 75vw;
-    height: 75vh;
-  }
-}
 
-/* Flex layout for (Stadgar, mal, bli_medlem) */
+/* Flex layout for (Stadgar, mal, Om föreningen) */
 
-.stadgarFlex {
-  width: auto;
-  height: auto;
-  min-height: 100vh;
+.flex-layout-1 {
   display: grid;
   place-items: center;
+  padding: 200px 0;
 }
 
-.stadgarFlexBackground {
+.flex-layout-1-card {
   background-color: white;
   box-shadow: 0 0 20px gray;
   border-radius: 25px;
-  margin: 200px 0;
-  width: 80vw;
-  height: auto;
+  max-width: 60vw;
+  line-height: 1.75em;
+  font-size: 24px;
   padding: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   text-align: left;
 }
 
-.stadgarFlexBackground > p {
-  margin: auto;
-  text-align: left;
-  line-height: 1.5em;
-  margin-block-start: 1.5em;
-  padding-bottom: 100px;
+.stadgarFlexBackground > h1 {
+  line-height: 2em;
+}
+
+/* Flex layout (Bli medlem, kontakt) */
+
+.flex-layout-2 {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-layout-2 > h1 {
+  margin: 200px 0 0 0;
+}
+
+/* Media queries */
+
+@media (orientation: portrait) {
+  #header {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  #headerLinks {
+    display: none;
+  }
+  #headerTitle > h2{
+    display: none;
+  }
+  .gridContainer {
+    grid-template: calc(100vh*2/5) 1fr / 100vw;
+  }
+  .left {
+    font-size: 1.75em;
+    padding: 0 50px;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 0;
+  }
+  #body {
+    font-size: 1em;
+  }
+  .flex-layout-1 {
+    padding: 20px 0;
+  }
+  .flex-layout-1-card {
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    max-width: 85vw;
+  }
+  .flex-layout-1-card > h1 {
+    font-size: 1.25em;
+  }
+  .flex-layout-1-card > p {
+    font-size: .75em;
+    line-height: 1.25em;
+  }
+  .contactCardFlex {
+    padding: 25px 10px;
+  }
+  .flex-layout-2 { 
+    padding: 100px 25px;
+  } 
+  .flex-layout-2 > p {
+    max-width: 90%;
+  }
+  .flex-layout-2 > h1 {
+    margin-top: 0;
+  }
 }
