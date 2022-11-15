@@ -90,10 +90,6 @@ a:active {
   cursor: pointer;
 }
 
-#phone-title {
-  display: none;
-}
-
 /* Dropdown menu */
 
 .dropdown-content {
@@ -151,6 +147,7 @@ a:active {
 #menuToggle {
   display: none;
   position: relative;
+  top: 25px;
   left: 25px;
   z-index: 1;
   -webkit-user-select: none;
@@ -189,8 +186,8 @@ a:active {
 
 #menuToggle span {
   display: block;
-  width: 30px;
-  height: 3px;
+  width: 33px;
+  height: 4px;
   margin-bottom: 5px;
   position: relative;
   top: 50%;
@@ -431,29 +428,15 @@ a:active {
 /* Media queries */
 
 @media (orientation: portrait) {
-  .header {
-    grid-template: 100% / auto 1fr;
-    color: black;
-    background-color: white;
-    border-radius: 0 0 5px 5px;
-  }
   #header {
+    background-color: transparent;
     box-shadow: none;
-  }
-  #headerTitle {
-    align-items: center;
-    width: 100px;
   }
   #headerLinks {
     display: none;
   }
   #headerTitle > h2{
     display: none;
-  }
-  #phone-title {
-    display: block;
-    font-size: 1.25em;
-    padding: 0 25px 0 0;
   }
   .gridContainer {
     padding: 50px 0;
@@ -473,7 +456,7 @@ a:active {
     font-size: 1em;
   }
   .flex-layout-1 {
-    padding: 100px 0;
+    padding: 20px 0;
   }
   .flex-layout-1-card {
     justify-content: center;
@@ -489,7 +472,7 @@ a:active {
     line-height: 1.25em;
   }
   .contactCardFlex {
-    padding: 100px 10px;
+    padding: 25px 10px;
   }
   .flex-layout-2 { 
     padding: 100px 25px;
