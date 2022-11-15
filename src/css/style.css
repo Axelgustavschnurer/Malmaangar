@@ -439,6 +439,7 @@ a:active {
     display: none;
   }
   .gridContainer {
+    padding: 50px 0;
     grid-template: calc(100vh*2/5) 1fr / 100vw;
   }
   .left {
