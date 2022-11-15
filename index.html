@@ -11,70 +11,75 @@
 
 <body>
 
-  <div class="backgroundImg"></div>
+  <div class="backgroundImg">
+    <img src="src/images/malmangar.jpg">
+  </div>
+
+  <!-- Header -->
 
   <div class="header">
     <div id="headerTitle">
         <h2><a href="index.html">Föreningen Malma By och Ängar</a></h2>
+
+        <!-- Menu for phone -->
+
         <nav role="navigation">
             <div id="menuToggle">
-              <!--
-              A fake / hidden checkbox is used as click reciever,
-              so you can use the :checked selector on it.
-              -->
               <input type="checkbox" />
-              
-              <!--
-              Some spans to act as a hamburger.
-              
-              They are acting like a real hamburger,
-              not that McDonalds stuff.
-              -->
               <span></span>
               <span></span>
               <span></span>
-              
-              <!--
-              Too bad the menu has to be inside of the button
-              but hey, it's pure CSS magic.
-              -->
               <ul id="menu">
                 <a href="index.html"><li>Hem</li></a>
                 <a href="bli_medlem.html"><li>Bli Medlem</li></a>
+                <a href="om-oss.html"><li>Om Föreningen</li></a>
                 <a href="mal.html"><li>Mål</li></a>
                 <a href="styrelse.html"><li>Styrelse</li></a>
                 <a href="stadgar.html"><li>Stadgar</li></a>
+                <a href="kontakt.html"><li>Kontakt</li></a>
               </ul>
             </div>
           </nav>
     </div>
+    
+    <!-- Navbar for pc -->
+
     <div id="headerLinks">
         <a href="bli_medlem.html" id="stodOss" onmouseover="stodOssEnter()" onmouseout="stodOssExit()">Bli Medlem</a>
-        <a id="omOss" onmouseover="omOssEnter()" onmouseout="omOssExit()">
+        <a href="om-oss.html" id="omOss" onmouseover="omOssEnter()" onmouseout="omOssExit()">
             Om Föreningen
             <div class="dropdown-content" id="dropdwn2" onmouseover="omOssEnter()" onmouseout="omOssExit()">
+                <a href="om-oss.html">Om Föreningen</a>
                 <a href="mal.html">Mål</a>
                 <a href="styrelse.html">Styrelse</a>
                 <a href="stadgar.html">Stadgar</a>
             </div>
         </a>
+        <a href="kontakt.html" id="kontakt" onmouseover="kontaktEnter()" onmouseout="kontaktExit()">Kontakt</a>
     </div>
 </div>
 
+<!-- Body -->
+
   <div class="gridContainer">
-    <div class="left"><h1 id="name">Rädda Malma by och ängar!</h1></div>
+    <div class="left">Rädda Malma by och ängar!</div>
     <div class="right">
       <div id="title">Hjälp oss bevara vår natur!</div>
       <div id="body">
-        Föreningen Malma By och Ängar grundades för att bevara de befintliga natur- och 
-        kulturvärden som nu hotas av utbyggnad. Bli medlem nu och hjälp oss motverka exploatering
-        så att vi kan bevara vår vackra natur!
+        Malma ängar har en rik biologisk mångfald och är enligt Jordbruksverket en av Sveriges mest bevaransvärda 
+        ängar. I Dagsläget är ängarna starkt hotade av markexploatering och bebyggelse. 
+        Istället för att fylla området med grå betong vill vi istället bevara ängarna och utveckla det närliggande 
+        området till ett frodande natur- och kulturlandskap.<br><br>
+
+        Hjälp oss stoppa exploateringen och bevara detta vackra område för framtida generationer!
       </div>
       <div id="button">
-        <a href="mal.html">Läs Mer</a>
+        <a href="om-oss.html">Läs Mer</a>
       </div>
     </div>
   </div>
+
+<!-- JS -->
 
 <script>
 
