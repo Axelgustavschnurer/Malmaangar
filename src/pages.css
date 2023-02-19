@@ -226,7 +226,7 @@ color: inherit;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 60vw;
+    width: 80vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
