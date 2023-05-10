@@ -75,10 +75,10 @@ nav > div:hover > .dropdown-menu {
 }
 
 #call-to-action {
-  padding: 15px;
+  padding: 15px 25px;
   background-color: green;
   color: #f5f5f5;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .call-to-action > #call-to-action:hover {

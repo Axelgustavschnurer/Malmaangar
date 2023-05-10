@@ -148,7 +148,6 @@ color: inherit;
 
 .flex-layout-row { /* Update name */
     width: 100vw;
-    margin-top: 125px;
     display: flex;
     flex-direction: column;
 }

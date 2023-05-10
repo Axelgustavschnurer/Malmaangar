@@ -60,6 +60,7 @@ color: inherit;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 25px;
 }
 
 .homepage-right {
@@ -91,15 +92,19 @@ color: inherit;
     background-color: white;
     color: black;
     padding: 10px 50px;
-    border-radius: 9999px;
+    border-radius: 10px;
     font-weight: bold;
+}
+
+.homepage-right > a:hover, .homepage-right > a:focus  {
+  background-color: green;
+  color: white;
 }
 
 /* Homepage Infoscreen */ 
 
 .homepage-info {
     background-color: #F1F1F1;
-    padding: 15px 0 50px 0;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -107,7 +112,12 @@ color: inherit;
     align-items: center;
 }
 
-.homepage-info > div {
+.homepage-info > section {
+  padding: 0 25px;
+}
+
+.homepage-info > section > div {
+  margin: auto;
     width: 50%;
     text-align: justify;
 }
@@ -134,9 +144,10 @@ color: inherit;
 }
 
 .homepage-info-images > img {
-    max-width: 100%;
     object-fit: cover;
-    height: 200px;
+    flex-grow: 1;
+    max-width: 100%;
+    max-height: 300px;
     border-radius: 10px;
 }
 
@@ -154,11 +165,12 @@ color: inherit;
     .homepage-left {
         width: 100vw;
         height: calc(100vh * (2/5));
+        padding: 25px 0;
     }
     .homepage-right {
         width: 100vw;
         height: unset;
-        padding: 50px 15px;
+        padding: 50px 25px;
     }
     .homepage-right > * {
         max-width: 90%;
@@ -176,7 +188,7 @@ color: inherit;
     }
 
     /* Homepage Infoscreen */
-    .homepage-info > div {
+    .homepage-info > section > div {
         width: 90%;
         text-align: left;
     }
