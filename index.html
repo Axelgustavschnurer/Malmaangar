@@ -6,46 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css">
     <link rel="stylesheet" href="src/header.css">
+    <link rel="stylesheet" href="src/header.css">
     <link rel="stylesheet" href="src/footer.css">
     <title>Malma Ängar</title>
 </head>
 <body>
     
-    <nav role="navigation">
-        <div id="menuToggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul id="menu">
-            <a href="index.html"><li>Hem</li></a>
-            <a href="pages/bli-medlem.html"><li>Bli Medlem</li></a>
-            <a href="pages/om-föreningen.html"><li>Om Föreningen</li></a>
-            <a href="pages/mål.html"><li>Mål</li></a>
-            <a href="pages/styrelse.html"><li>Styrelse</li></a>
-            <a href="pages/stadgar.html"><li>Stadgar</li></a>
-            <a href="pages/kontakt.html"><li>Kontakt</li></a>
-          </ul>
-        </div>
-    </nav>
-
     <!-- Header -->
-    <div class="navbar">
-        <div class="dropdown">
-            <a class="dropbtn" href="pages/bli-medlem.html">Bli Medlem</a>
+
+    <header>
+      <h1><a href="index.html">Föreningen Malma By Och Ängar</a></h1>
+      <nav>
+        <div>
+          <a href="pages/om-föreningen.html">Om Föreningen</a>
+          <div class="dropdown-menu">
+            <a href="pages/om-föreningen.html">Om Föreningen</a>
+            <a href="pages/mål.html">Mål</a>
+            <a href="pages/styrelse.html">Styrelse</a>
+            <a href="pages/stadgar.html">Stadgar</a>
+          </div>
         </div>
-        <div class="dropdown">
-            <a class="dropbtn" href="pages/om-föreningen.html">Om Föreningen</a>
-            <div class="dropdown-content">
-                <a href="pages/om-föreningen.html">Om Föreningen</a>  
-                <a href="pages/mål.html">Mål</a>
-                <a href="pages/styrelse.html">Styrelse</a>
-                <a href="pages/stadgar.html">Stadgar</a>
-            </div>
+        <div>
+          <a href="pages/kontakt.html">Kontakt</a>
         </div>
-        <div class="dropdown">
-            <a class="dropbtn" href="pages/kontakt.html">Kontakt</a>
+        <div class="call-to-action">
+          <a href="pages/bli-medlem.html" id="call-to-action">Bli Medlem</a>
         </div>
+      </nav>
+    </header>
+
+    <!-- Hamburger menu for phone -->
+
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a href="index.html"><li>Hem</li></a>
+        <a href="pages/bli-medlem.html"><li>Bli Medlem</li></a>
+        <a href="pages/om-föreningen.html"><li>Om Föreningen</li></a>
+        <a href="pages/mål.html"><li>Mål</li></a>
+        <a href="pages/styrelse.html"><li>Styrelse</li></a>
+        <a href="pages/stadgar.html"><li>Stadgar</li></a>
+        <a href="pages/kontakt.html"><li>Kontakt</li></a>
+      </ul>
     </div>
 
     <!-- Body Homepage -->

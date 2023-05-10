@@ -33,7 +33,6 @@ color: inherit;
 /* Stretched image with title at top of page */
 
 .image-title {
-    margin-top: 100px;
     width: 100vw;
     height: 300px;
     object-fit: cover;
@@ -41,7 +40,7 @@ color: inherit;
 
 .cover {
     position: absolute;
-    top: 100px;
+    top: 110.88px;
     left: 0;
     width: 100vw;
     height: 300px;
@@ -61,10 +60,8 @@ color: inherit;
 .bli-medlem-info {
     width: 60vw;
     padding: 80px 0;
-    position: absolute;
-    top: calc((100px + 250px) - (42px + 40px)); /* Height of header + height of image - textheight/2 + padding/2 */
-    left: 50%;
-    transform: translate(-50%);
+    margin: auto;
+    transform: translate(0, -25%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,7 +97,7 @@ color: inherit;
     margin-top: 0;
 }
 
-@media only screen and (max-width: 855px), (pointer:none), (pointer:coarse) {
+@media only screen and (max-width: 1200px), (pointer:none), (pointer:coarse) {
     /* Stretched image with title at top of page */
     .image-title {
         height: 200px;
@@ -117,7 +114,7 @@ color: inherit;
 
     /* Body of member page and contact page */
     .bli-medlem-info {
-        top: 200px;
+        transform: unset;
         box-shadow: unset;
         border-radius: unset;
         background-color: unset;
@@ -216,16 +213,13 @@ color: inherit;
 /* Layout for styrelse page */
 
 #styrelse-page-title {
-    margin-top: 150px;
     font-size: 3.5rem;
     text-align: center;
 }
 
 .styrelse-flexbox-wrapper {
     padding: 50px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+    margin: auto;
     width: 80vw;
     display: flex;
     flex-wrap: wrap;
