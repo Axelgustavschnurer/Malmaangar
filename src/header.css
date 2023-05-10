@@ -14,7 +14,7 @@ header > h1 {
 header > nav {
   flex-grow: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-around;
   align-items: center;
 }
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav > div > a:hover {
-  font-weight: bold;
+  text-shadow: 1px 0 0 currentColor;
   margin-bottom: -3px;
   border-bottom: 3px solid green;
 }
@@ -63,13 +63,13 @@ nav > div:hover > .dropdown-menu {
 }
 
 .dropdown-menu > a:hover {
-  font-weight: bold;
+  text-shadow: 1px 0 0 currentColor;
   border-bottom: 3px solid green;
   background-color: #f9f9f9;
 }
 
 .active {
-  font-weight: bold;
+  text-shadow: 1px 0 0 currentColor;
   margin-bottom: -3px;
   border-bottom: 3px solid green;
 }
