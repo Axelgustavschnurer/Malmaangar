@@ -112,6 +112,8 @@ nav > div:hover > .dropdown-menu {
     color: black;
     transition: color 0.3s ease;
     line-height: 1.5em;
+    display: block;
+    width: fit-content;
   }
   
   #menuToggle a:hover {
