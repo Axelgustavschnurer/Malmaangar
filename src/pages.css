@@ -6,7 +6,6 @@
 body, html {
     scroll-behavior: smooth;
     margin: 0;
-    overflow-x: hidden;
     background-color: #f1f1f1;
 }
 
@@ -33,7 +32,7 @@ color: inherit;
 /* Stretched image with title at top of page */
 
 .image-title {
-    width: 100vw;
+    width: 100%;
     height: 300px;
     object-fit: cover;
 }
@@ -42,7 +41,7 @@ color: inherit;
     position: absolute;
     top: 110.88px;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 300px;
     background-color: rgba(241, 241, 241, .5);
     display: flex;

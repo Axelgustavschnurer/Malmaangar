@@ -6,7 +6,6 @@
 body, html {
     scroll-behavior: smooth;
     margin: 0;
-    overflow-x: hidden;
 }
 
 /* Link behavior */
@@ -33,9 +32,8 @@ color: inherit;
 .background-image {
     z-index: -1;
     position: absolute;
-    width: 100vw;
-    right: 0;
     height: 95vh;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -49,7 +47,6 @@ color: inherit;
 
 .homepage-frontscreen {
     display: flex;
-    width: 100vw;
     height: 85vh;
 }
 
@@ -72,20 +69,20 @@ color: inherit;
     color: white;
 }
 
-.homepage-right > * {
+.homepage-right > div > * {
     max-width: 75%;
     margin-left: 50px;
 }
 
-.homepage-right > h2 {
+.homepage-right > div > h2 {
     font-size: 2rem;
 }
 
-.homepage-right > p {
+.homepage-right > div > p {
     font-size: 1.25rem;
 }
 
-.homepage-right > a {
+.homepage-right > div > a {
     margin: 25px 0 0 50px;
     text-align: center;
     width: fit-content;
@@ -96,7 +93,7 @@ color: inherit;
     font-weight: bold;
 }
 
-.homepage-right > a:hover, .homepage-right > a:focus  {
+.homepage-right > div > a:hover, .homepage-right > div > a:focus  {
   background-color: green;
   color: white;
 }
@@ -105,7 +102,6 @@ color: inherit;
 
 .homepage-info {
     background-color: #F1F1F1;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -167,23 +163,31 @@ color: inherit;
         height: calc(100vh * (2/5));
         padding: 25px 0;
     }
+
     .homepage-right {
         width: 100vw;
         height: unset;
-        padding: 50px 25px;
+        padding: 25px 0;
     }
-    .homepage-right > * {
-        max-width: 90%;
+
+    .homepage-right > div {
+        width: 90%;
+        margin: auto;
+    }
+
+    .homepage-right > div > * {
         margin-left: unset;
+        max-width: unset;
     }
-    .homepage-right > h2 {
+
+    .homepage-right > div >h2 {
         font-size: 1.25rem;
     }
     
-    .homepage-right > p {
+    .homepage-right > div >p {
         font-size: 1.15rem;
     }
-    .homepage-right > a {
+    .homepage-right > div > a {
         margin: unset;
     }
 
