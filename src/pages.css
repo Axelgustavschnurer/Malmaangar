@@ -189,7 +189,6 @@ color: inherit;
 /* Layout for About, Goals and stadgar */
 
 .flex-layout-row { /* Update name */
-    width: 100vw;
     display: flex;
     flex-direction: column;
 }
