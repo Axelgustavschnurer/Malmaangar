@@ -109,13 +109,26 @@ color: inherit;
 }
 
 .homepage-info > section {
-  padding: 0 25px;
+  padding: 25px;
+  position: relative;
+  z-index: 2;
 }
 
 .homepage-info > section > div {
-  margin: auto;
+    margin: auto;
     width: 50%;
-    text-align: justify;
+    position: relative;
+    background-color: white;
+    padding: 25px;
+    z-index: 2;
+}
+
+.homepage-info > section div:first-of-type {
+    border-radius: 10px 10px 0 0;
+}
+
+.homepage-info > section div:last-of-type {
+    border-radius: 0 0 10px 10px;
 }
 
 .homepage-info-images-text { /* Wrap text and image when they should be beside each other*/
@@ -193,7 +206,7 @@ color: inherit;
 
     /* Homepage Infoscreen */
     .homepage-info > section > div {
-        width: 90%;
+        width: 85%;
         text-align: left;
     }
     .homepage-info-images-text {
