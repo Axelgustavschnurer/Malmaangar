@@ -9,6 +9,25 @@
     <link rel="stylesheet" href="../src/footer.css">
     <title>Malma Ängar</title>
 </head>
+
+<style>
+  .downloadlink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: lightgray;
+    width: fit-content;
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 3px;
+  }
+
+  .downloadlink:hover {
+    box-shadow: inset 0 0 9999px rgba(0, 0, 0, .25);
+  }
+
+</style>
+
 <body>
 
     <!-- Header -->
@@ -66,8 +85,32 @@
     </div>
 
     <!-- Body -->
-    <div class="flex-layout-row">
-        <h1>Bilagor</h1>
+    <div style="display: block; width: 1250px; max-width: 100%; padding: 1em; margin: auto; box-sizing: border-box;">
+        <h1 style="margin-top: 50px;">Bilagor</h1>
+        <a href="../bilagor/detaljplan.pdf" download class="downloadlink" style="margin: 1em 0"> 
+          Detaljplan 
+          <img src="../src/images/download.svg">
+        </a>
+        <a href="../bilagor/unt_debatt.docx" download class="downloadlink" style="margin: 1em 0;"> 
+          Unt Debatt 
+          <img src="../src/images/download.svg">
+        </a>
+        <a href="../bilagor/Skrivelse_till_PBN.docx" download class="downloadlink" style="margin: 1em 0;"> 
+          Skrivelse till PBN
+          <img src="../src/images/download.svg">
+        </a>
+        <a href="../bilagor/Skrivelse_till_PBN.docx" download class="downloadlink" style="margin: 1em 0;"> 
+          Yttrande över detaljplan - Natura 2000
+          <img src="../src/images/download.svg">
+        </a>
+        <a href="../bilagor/Till_UAF_ang_slåtter mm.docx" download class="downloadlink" style="margin: 1em 0;"> 
+          Till UAF ang slåtter
+          <img src="../src/images/download.svg">
+        </a>
+        <a href="../bilagor/Yttrande_över_delsträcka_D.docx" download class="downloadlink" style="margin: 1em 0;"> 
+          Yttrande över delsträcka D
+          <img src="../src/images/download.svg">
+        </a>
     </div>
 
 </body>
